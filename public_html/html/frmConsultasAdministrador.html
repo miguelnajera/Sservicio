@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Consultas del administrador</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/CSSconsultasAdministrador.css">
+        <script src="../js/jquery-1.11.3.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jsEfectosFormularioAdministrador.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="nombres">Realizar Busqueda Individual: 
+                            <select id='filtroPrincipal'>
+                              <option value="yes">Si</option>
+                              <option value="no">No</option>
+                            </select>
+                        </label>&nbsp<button onclick='showScreensAsPerButtons()'>Ejecutar</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Busqueda Individual con filtros personales -->
+        <div id='bIndividual' class="container bHidden">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>Ingresa el:</label>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>
+                            <select id='tFiltroIndividual'>
+                                <option value='nc'>Numero de Control</option>
+                                <option value='aPat'>Apellido Paterno</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label>que deseas encontrar :</label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label><input type='text' placeholder='Captura aqui'></label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <div class="btn-group" role="group" aria-label="Left Align">
+                            <button type="button" class="btn btn-default">Consultar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Busquedas masivas con filtros preestablecidos-->
+        <div id='bGrupal' class='container bHidden'>
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="activos">Todos</label>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="activos">Activos</label>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="activos">Inactivos</label>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="activos">Hombres</label>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="activos">Mujeres</label>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="activos">C/Servicio</label>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="activos">S/Servicio</label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="checkbox">
+                        <label>Semestre(s) : </label>
+                        <select id='filtroPrincipal'>
+                              <option value="1">Primero</option>
+                              <option value="2">Segundo</option>
+                              <option value="3">Tercero</option>
+                              <option value="4">Cuarto</option>
+                              <option value="5">Quinto</option>
+                              <option value="6">Sexto</option>
+                              <option value="7">Septimo</option>
+                              <option value="8">Octavo</option>
+                              <option value="9">Noveno</option>
+                              <option value="10">Decimo</option>
+                              <option value="11">DecimoPrimero</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="btn-group" role="group" aria-label="Left Align">
+                        <button type="button" class="btn btn-default">Consultar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container bHidden">
+            <div class="table-responsive">
+                <table class="table">
+                    <tr>
+                        <th>Titulo 1</th>
+                        <th>Titulo 2</th>
+                        <th>titulo 3</th>
+                        <th>titulo 4</th>
+                    </tr>
+                    <tr>
+                        <td>contenido 1</td>
+                        <td>contenido 2</td>
+                        <td>contenido 3</td>
+                        <td>contenido 4</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

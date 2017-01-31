@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cPanel Control</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/CSScPanel.css">
+        <link rel="stylesheet" href="css/CSSconsultasAdministrador.css">
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jsEfectosControlPanel.js"></script>
+        <script src="js/jsEfectosFormularioAdministrador.js"></script>
+
+
+    </head>
+    <body>
+        <div class="container-fluid" id="enc">
+            <h2>Instituto Tecnologico Superior de Alvarado </h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><header><h1>Panel de Control</h1></header></div>
+                <div class="col-md-1"><aside><img src="imgs/images.jpeg" alt="FotoUsr" class="img-circle"></aside></div>
+                <div class="col-md-3 col-md-offset-1">
+                    <aside>
+                        <p class="lead">Bienvenid@ : <code>nUsuario</code></p>
+                        <p>Tu nivel de acceso es de  : <code>$nNivel</code></p>
+                    </aside></div>
+            </div>
+        </div><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                        <div id="accordion">
+                            <h3>Perfil</h3>
+                            <div>
+                                <p><a href="frmProfile">Actualizar o Actualizar Perfil</a></p>
+                                <p><a href="frmLoadPicture">Cambiar foro de perfil</a></p>
+                                <p>...</p>
+                            </div>
+                            <h3>Servicio Social</h3>
+                            <div>
+                                <p>Generar Reporte <code>nNR</code></p>
+                                <p>Generar Carta de Presentacion</p>
+                                <p>Generar Carta de Aceptacion</p>
+                            </div>
+                            <h3>Administrador</h3>
+                            <div>
+                                <p>Agregar Alumno</p>
+                                <p><a href="frmConsultasAdministrador">Consultar Alumnos</a></p>
+                            </div>
+                        </div> 
+                </div>
+                <div class="col-md-8">
+                   
+                        <div id="content"></div>
+                    
+                </div>
+               
+            </div>
+        </div>
+    </body>
+</html>

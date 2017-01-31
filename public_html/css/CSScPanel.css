@@ -1,0 +1,12 @@
+
+#enc{
+    background: #000;
+    color: white;
+    margin-bottom: 8px;
+}
+
+#accordion h3:hover{
+    background-color: #1b6d85;
+    cursor: pointer;
+    color: #ccc; 
+}

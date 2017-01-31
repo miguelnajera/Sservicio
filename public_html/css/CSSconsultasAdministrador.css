@@ -1,0 +1,9 @@
+/*Formato para formulario de consultas de administrador*/
+
+.bHidden{
+	display: none;
+}
+
+.bShowed{
+	display: block;
+}
